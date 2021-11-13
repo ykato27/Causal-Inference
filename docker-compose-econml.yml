@@ -1,7 +1,11 @@
 version: "3"
 services:
-  jupyter:
-    build: .
+  econml:
+    container_name: econml
+    image: econml:1.0
+    build:
+      context: ./docker
+      dockerfile: ./econml/Dockerfile
     volumes:
       - ./:/work
     working_dir: /work
