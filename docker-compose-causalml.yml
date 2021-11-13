@@ -1,0 +1,14 @@
+version: "3"
+services:
+  causalml:
+    container_name: causalml
+    image: causalml:1.0
+    build:
+      context: ./docker
+      dockerfile: ./causalml/Dockerfile
+    volumes:
+      - ./:/work
+    working_dir: /work
+    ports:
+      - 8888:8888
+    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token=''

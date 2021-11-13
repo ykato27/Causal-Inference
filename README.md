@@ -70,6 +70,23 @@ docker-compose -f docker-compose-{*構築対象}.yml up --build
                 - DA-Learner (Domain Adaptation Learner)
                 - DR-Learner (Doubly Robust Learner)
 
+- CausalML
+    - Uber Technology のメンバーが開発したパッケージ
+    - Uplift Modeling や先導的な機械学習アルゴリズムを用いた因果推論手法を提供
+
+    - CausalML パッケージで提供されているもの
+        - Uplift Modeling 手法
+            - Uplift Tree
+                - KL Divergence
+                - Chi-Square
+                - Euclidean Distance
+                - Contextual Treatment Selection
+            - Meta-learner
+                - R-learner
+                - X-learner
+                - T-learner
+                - S-learner
+
 ## 動作環境
 
 マシンスペック（Mac)
