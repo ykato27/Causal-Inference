@@ -87,6 +87,9 @@ docker-compose -f docker-compose-{*構築対象}.yml up --build
                 - T-learner
                 - S-learner
 
+- DoWhy
+    - 統計的因果推論を行うためのライブラリ
+
 ## 動作環境
 
 マシンスペック（Mac)
